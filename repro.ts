@@ -3,3 +3,6 @@ const arr2 = [4, 5, 6];
 
 [].concat(arr1, arr2); 
 // Becomes `[...[], ...arr1, ...arr2]` when fixed
+
+['a', 'b', 'c'].concat(arr1, arr2);
+// Becomes `[...['a', 'b', 'c'], ...arr1, ...arr2]` when fixed
