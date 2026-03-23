@@ -4,8 +4,10 @@ import e18e from "@e18e/eslint-plugin";
 
 export default defineConfig({
   files: ["**/*.ts"],
-  extends: [
-    tseslint.configs.base, 
-    e18e.configs.recommended,
-  ],
+  languageOptions: {
+    parserOptions: {
+      projectService: true,
+    },
+  },
+  extends: [tseslint.configs.base, e18e.configs.recommended],
 });
