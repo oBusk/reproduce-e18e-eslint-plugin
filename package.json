@@ -6,7 +6,8 @@
     "lint-with-types": "eslint ./repro.ts --config eslint.config.mjs",
     "lint-no-types": "eslint ./repro.ts --config eslint.no-types.config.mjs",
     "lintfix-with-types": "eslint ./repro.ts --config eslint.config.mjs --fix",
-    "lintfix-no-types": "eslint ./repro.ts --config eslint.no-types.config.mjs --fix"
+    "lintfix-no-types": "eslint ./repro.ts --config eslint.no-types.config.mjs --fix",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@e18e/eslint-plugin": "^0.3.0",

@@ -1,0 +1,44 @@
+name: Test
+
+on: [push, pull_request]
+
+jobs:
+  lint-with-types:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: oBusk/action-pnpm-setup@v1
+
+      - run: pnpm run lint-with-types
+
+  lint-no-types:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: oBusk/action-pnpm-setup@v1
+
+      - run: pnpm run lint-no-types
+
+  lintfix-with-types:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: oBusk/action-pnpm-setup@v1
+
+      - run: pnpm run lintfix-with-types
+
+      - run: pnpm run typecheck
+
+  lintfix-no-types:
+    runs-on: ubuntu-latest
+    steps:  
+      - uses: actions/checkout@v6
+
+      - uses: oBusk/action-pnpm-setup@v1
+
+      - run: pnpm run lintfix-no-types
+      
+      - run: pnpm run typecheck
