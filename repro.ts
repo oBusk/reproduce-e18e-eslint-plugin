@@ -11,3 +11,7 @@ result = a.concat(bArray);
 result = a.concat(bValue);
 // With type information becomes: [...a, bValue] ✅
 // Without type information becomes: [...a, ...bValue] ❌
+
+function processItems(items: string | string[]): string[] {
+  return ([] as string[]).concat(items);
+}
