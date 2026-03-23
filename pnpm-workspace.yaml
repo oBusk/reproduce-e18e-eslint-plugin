@@ -1,0 +1,4 @@
+configDependencies:
+  "@obusk/pnpm-plugin-defaults": 0.3.0+sha512-Vc6B0IfZgB+ydRh0eYpmxV7eCEC5fjDcKX+WrpSd3NiIaFS7yLrXRaWVSoIOLvAYIKbcsYXUa+ZFCf5zVw3nSw==
+minimumReleaseAgeExclude:
+  - "@e18e/eslint-plugin"
