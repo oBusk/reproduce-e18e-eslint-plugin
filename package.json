@@ -1,0 +1,14 @@
+{
+  "name": "@obusk/reproduce-e18e-eslint-plugin",
+  "private": true,
+  "packageManager": "pnpm@10.32.1",
+  "scripts": {
+    "lint": "eslint ./repro.ts"
+  },
+  "devDependencies": {
+    "@e18e/eslint-plugin": "^0.3.0",
+    "eslint": "^10.1.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.57.1"
+  }
+}
